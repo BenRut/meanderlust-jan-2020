@@ -1,0 +1,572 @@
+html, body {
+    height: 100%;
+        overflow: hidden;
+    
+}
+
+body {font-family: ingra-condensed-2, sans-serif;
+background: linear-gradient(270deg, #b7fff5, #fe9648);
+background-size: 500% 500%;
+
+-webkit-animation: AnimationName 13s ease infinite;
+-moz-animation: AnimationName 13s ease infinite;
+animation: AnimationName 13s ease infinite;
+
+    
+
+
+   
+}
+/*Navbar*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+ 
+}
+
+.sidenav span {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: ingra-condensed, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-weight: 300;
+  color: darkgrey;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav span:hover {
+ opacity: 0.7; 
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+ 
+  .sidenav span {font-size: 18px;}
+}
+    
+/*    navbar end*/
+
+.container{
+ margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#logo {
+    width: 500px;
+    margin: auto;
+    margin-left:-65px;
+        margin-bottom: 5px;
+  
+}
+
+#audioplayer{
+    margin: auto;
+    width: 100%;
+  text-align: center;
+    border: solid 0px;
+    
+    background-color: none;
+        color:darkgrey;
+      position: fixed;
+    float: right;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    
+  display: flex;
+}
+
+.col {
+  flex: 1;
+}
+
+@media screen and (max-width: 500px){
+    #audioplayer {
+      width:300px;
+    }  
+    #logo {
+      
+        margin: auto;
+        width:300px;
+    }
+    input[type=range] {
+    -webkit-appearance: none;
+    margin: 18px 0;
+    width: 80%;
+    }
+}
+
+#pButton{
+    
+    height:60px; 
+    width: 60px;
+    border: solid 0px;
+    background-size: 40% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline:none;
+    margin: auto;
+    margin-left: 20px;
+   
+}
+
+#pbutton:hover {
+    opacity: 0.7; 
+}
+
+
+
+.right-content {
+    width: 200px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+        float:right;
+}
+#volume-icon {
+    width: 25px;
+    margin-bottom: -8px;
+    margin-left: 
+}
+@-moz-document url-prefix() {
+    #volume-icon {
+        margin-bottom: 12px;
+    }
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  
+ 
+  background: white;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.3);
+    border-radius: 10px
+ 
+ 
+}
+input[type=range]::-webkit-slider-thumb {
+
+  
+  height: 16px;
+  width: 16px;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+     box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  
+  background: white;
+  box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.3);
+    border-radius: 10px
+}
+input[type=range]::-moz-range-thumb {
+
+  height: 16px;
+  width: 16px;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+     box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+ 
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: black;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+ 
+}
+input[type=range]::-ms-fill-upper {
+  background: black;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  
+}
+input[type=range]::-ms-thumb {
+ 
+  height: 16px;
+  width: 16px;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+     box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.3);
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: darkgrey;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: darkgrey;
+}
+
+.play{
+    background: url(img/play2.png)
+}
+.pause{
+    background: url(img/pause2.png) ;
+}
+
+.play:hover{
+    opacity: 0.7; 
+}
+
+.pause:hover {
+    opacity: 0.7; 
+}
+
+.arrange-horizontally > * {
+    display: inline-block;
+    text-align: center;
+}
+
+.arrange-vertically > * {
+    display: block;
+}
+
+
+.track-info{
+
+
+  margin-top: 0em;
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+    
+   /* Starting transition */    
+    left: 0%;
+    width: 100%;
+    
+   /* This has a slight delay on it. */
+    -webkit-transition: left 10s 0.5s, width 10s 0.5s;
+    -moz-transition: left 10s 0.5s, width 10s 0.5s;
+    transition: left 10s 0.5s, width 10s 0.5s;
+}
+
+
+.track-info-box:hover .track-info {
+    /* This is not completely accurate. It resizes to 2x the current width. */
+    left: -310%;
+    width: 500%;
+
+}
+
+
+
+.track-info-box{
+    margin-top: 25px;
+
+
+    overflow: hidden;
+    
+      /* To make the width of the container exact. */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+
+
+    
+
+
+#artist {
+    font-family: ingra-condensed, sans-serif;
+
+font-weight: 300;
+
+font-style: normal;
+}
+
+
+
+/*Background Animation*/
+/*
+.bg {
+  animation:slide 5s ease-in-out infinite alternate;
+  background-image:  radial-gradient(ellipse farthest-corner at 0px 1000px, #ffe9db 70%, #FFFFFF 50%, #36c49e 50%);
+
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+    
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:12s;
+}
+
+.bg3 {
+  animation-duration:20s;
+}
+
+
+
+@keyframes slide {
+  0% {
+    transform:translateX(-20%);
+  }
+  100% {
+    transform:translateX(10%);
+  }
+}
+*/
+
+/*Animated Gradient Background*/
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/*Hamburger*/
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  z-index: 2;
+}
+  .hamburger:hover {
+    opacity: 0.7; }
+  .hamburger.is-active:hover {
+    opacity: 0.7; }
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after {
+    background-color: darkgrey; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: absolute;
+  z-index: 5;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+     border-radius: 4px;
+    position: absolute;
+      z-index: 2;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -7px; }
+  .hamburger-inner::after {
+    bottom: -7px; }
+/*
+
+ * Hamburger Spin
+   */
+
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  .hamburger--spin .hamburger-inner::before {
+    transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in; }
+  .hamburger--spin .hamburger-inner::after {
+    transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .hamburger--spin.is-active .hamburger-inner::before {
+    top: 0;
+    opacity: 0;
+    transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out; }
+  .hamburger--spin.is-active .hamburger-inner::after {
+    bottom: 0;
+    transform: rotate(-90deg);
+    transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1); }
+button:focus {outline:0;}
+/*About Overlay*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 10%;
+  height: 80%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+    overflow-y: scroll;
+   
+  
+}
+
+.overlay-content::-webkit-scrollbar {
+ display: none;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  right: 5px;
+  font-size: 60px;
+    font-family: ingra-2, sans-serif;
+}
+.centerblock {
+    margin: auto;
+    width: 200px;
+    font-size: 20px;
+    margin: 0;
+  position: absolute;
+ 
+    left: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+      -ms-transform: translateX(-50%);
+  transform: translate(-50%);
+}
+
+.centerblock2 {
+    
+    margin: auto;
+    width: 500px;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .centerblock2 {
+        font-size: 13px;
+        width: 300px
+    }
+}
+
+.fa {
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+::-webkit-scrollbar {
+    width: 0px;}
+
